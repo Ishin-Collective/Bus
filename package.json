@@ -1,6 +1,6 @@
 {
 	"name": "@rbxts/bus",
-	"version": "0.0.1",
+	"version": "0.1.0",
 	"description": "Lightweight Event bus for Roblox",
 	"main": "init.lua",
 	"types": "index.d.ts",
