@@ -1,0 +1,16 @@
+{
+	"name": "Ninkyo Dantai Bus",
+	"build": {
+		"dockerfile": "Dockerfile",
+		"args": {
+			"NODE_VERSION": "17.3.0",
+			"PNPM_VERSION": "6.24.2",
+			"ALPINE_VERSION": "3.14"
+		}
+	},
+	"extensions": [
+		"ms-vscode.vscode-typescript-next",
+	],
+	"postCreateCommand": "pnpm install",
+	"remoteUser": "vscode",
+}
