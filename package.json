@@ -1,0 +1,19 @@
+{
+	"name": "@rbxts/bus",
+	"version": "0.0.1",
+	"description": "Lightweight Event bus for Roblox",
+	"main": "init.lua",
+	"types": "index.d.ts",
+	"scripts": {},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Ninkyo-Dantai/Bus"
+	},
+	"keywords": [],
+	"author": "Redstoneguy129",
+	"license": "GPL-3.0",
+	"bugs": {
+		"url": "https://github.com/Ninkyo-Dantai/Bus/issues"
+	},
+	"homepage": "https://github.com/Ninkyo-Dantai/Bus/blob/master/README.md"
+}
