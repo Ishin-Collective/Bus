@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+        "allowSyntheticDefaultImports": true,
+        "isolatedModules": false,
+        "downlevelIteration": true,
+        "module": "commonjs",
+        "strict": true,
+        "experimentalDecorators": true,
+        "allowJs": false,
+        "target": "es6",
+        "noLib": true,
+        "moduleResolution": "node",
+        "types": ["node", "jest"],
+        "typeRoots": [
+            "node_modules/@rbxts",
+        ],
+        "rootDir": "src",
+        "outDir": "out",
+        "declaration": true,
+    },
+    "include": ["src/**/*.ts"],
+    "exclude": ["**/*.test.ts"]
+}
