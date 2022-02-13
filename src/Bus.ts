@@ -1,9 +1,18 @@
-import { Event, Listener } from "./index";
+import { Event, Listener } from ".";
 
 export default class Bus {
-    private events: Map<Event, Listener<Event>[]> = new Map();
+    private listeners: Listener<Event>[] = [];
 
-    Listen(listener: Listener<any>) {
-        //this.events.set();
+    Listen(listener: { new (): Listener<Event> }) {
+        const subscribedListener = new listener();
+        if(this.listeners.includes(subscribedListener)) {
+            warn("Event Bus is already listening to this listener");
+        } else {
+            this.listeners.push(subscribedListener);
+        }
+    }
+
+    Post(event: Event) {
+        
     }
 }
