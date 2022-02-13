@@ -1,4 +1,4 @@
-import { Event } from "../index";
+import { Event } from "./index";
 
 class onHitEvent extends Event {
     private hit: number;
@@ -17,14 +17,13 @@ class onHitEvent extends Event {
 
 interface Listener<T extends Event> {
     onRun(event: T): void,
-    onError?(err: Error): void
+    onError?(err: unknown): void
 }
 
 export default Listener;
 
 class test implements Listener<onHitEvent> {
     onRun(event: onHitEvent): void {
-        console.log(event.getHits());
     }
 }
 
